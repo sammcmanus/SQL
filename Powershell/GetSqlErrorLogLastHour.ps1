@@ -1,0 +1,1 @@
+﻿Function Get-SqlErrorLogLastHour {[CmdletBinding()]Param ([Parameter(Mandatory=$True,Position=1)][Microsoft.SqlServer.Management.Smo.Server]$Server)Get-SqlErrorLog -InputObject $Server -After (Get-Date).AddHours(-1) -Ascending | SELECT Date, Source, Text}
