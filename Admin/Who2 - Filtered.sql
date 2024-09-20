@@ -1,3 +1,5 @@
+USE [Master]
+GO
 DECLARE @Table TABLE(
         SPID INT,
         Status VARCHAR(MAX),
@@ -16,7 +18,4 @@ DECLARE @Table TABLE(
 
 INSERT INTO @Table EXEC sp_who2
 
-SELECT
-	*
-FROM
-	@table
+SELECT * FROM @table

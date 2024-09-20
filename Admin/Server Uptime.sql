@@ -1,3 +1,5 @@
+USE [master]
+GO
 DECLARE @server_start_time DATETIME, 
 @seconds_diff INT, 
 @years_online INT, 

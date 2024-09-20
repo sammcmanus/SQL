@@ -1,14 +1,12 @@
 --- Get Current Locations
 
---- *** Make sure HPS\HSCSQLService has full control on Drives
-
 USE master 
 EXEC sp_configure 'show advanced options', 1;
 RECONFIGURE;
 EXEC sp_configure 'xp_cmdshell', 1;
 RECONFIGURE;
 
-DECLARE @DBName varchar(max) = 'AffiliateBoardingPortal'
+DECLARE @DBName varchar(max) = '[Database Name]'
 
 DECLARE @LogName Varchar(MAX), @DataName Varchar(MAX),
 	    @LogFileName Varchar(MAX), @DataFileName Varchar(MAX), @CMDLog VARCHAR(MAX), @CMDData VARCHAR(MAX),

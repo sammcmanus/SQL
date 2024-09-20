@@ -1,3 +1,5 @@
+USE [Database Name]
+GO
 SELECT 
     s.Name AS SchemaName,
     t.NAME AS TableName,

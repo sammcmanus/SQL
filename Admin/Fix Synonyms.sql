@@ -1,7 +1,7 @@
 DECLARE @FromServerName VARCHAR(35) = NULL
-		,@FromDatabaseName VARCHAR(35) = 'HCSdb%' --Can use escape characters for "Like" Searchers
+		,@FromDatabaseName VARCHAR(35) = '[DATABASE NAME]' --Can use escape characters for "Like" Searchers
 
-DECLARE @ToServerName VARCHAR(35) = 'JVLDBUAT03'
+DECLARE @ToServerName VARCHAR(35) = '[TO SERVER]'
 		,@ToDatabaseName VARCHAR(35) = NULL
 
 --Synonym Fix

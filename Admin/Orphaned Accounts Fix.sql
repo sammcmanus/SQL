@@ -1,3 +1,5 @@
+USE [DATABASE NAME]
+GO
 -- Secure Orphaned User AutoFix 
 DECLARE @autoFix bit; 
 SET @autoFix = 'TRUE';  -- FALSE = Report only those user who could be auto fixed. 

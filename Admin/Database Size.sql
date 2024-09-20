@@ -1,3 +1,5 @@
+USE [Database Name]
+GO
 SELECT 
     [TYPE] = A.TYPE_DESC
     ,[FILE_Name] = A.name
