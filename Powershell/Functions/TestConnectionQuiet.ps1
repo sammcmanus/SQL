@@ -1,1 +1,0 @@
-﻿Function Test-ConnectionQuiet {	[CmdletBinding()]	Param ([Parameter(Mandatory=$True,Position=1)][String]$Server			)				Test-Connection -ComputerName $Server -Quiet}
